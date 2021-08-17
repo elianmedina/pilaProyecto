@@ -5,11 +5,13 @@
  */
 package datos;
 
+import modelo.Base;
+
 /**
  *
  * @author elian.medina
  */
-public class Numero {
+public class Numero extends Base{
 
     private int dado1;
     
@@ -64,6 +66,11 @@ public class Numero {
     @Override
     public String toString() {
         return "Dado izquierdo" + dado1  + "Dado derecho" + dado2;
+    }
+
+    @Override
+    public Base copy() {
+        return new Numero(dado1);
     }
     
     

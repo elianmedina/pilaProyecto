@@ -3,7 +3,6 @@ package modelo;
 import datos.Numero;
 import modelo.OperacionesPila;
 import modelo.Pila;
-import model.Base;
 /**
  *
  * @author 
@@ -35,7 +34,7 @@ public class Tools
             {
                 Numero e = q.desapilar();
                 sb.append("<tr>").append("<td>");
-                sb.append(e.getTexto());
+                sb.append(e.getNumero());
                 sb.append("</td>").append("</tr>");
             }
             while (!q.estaVacia());
